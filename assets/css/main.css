@@ -65,6 +65,59 @@ transition: .1s ease-in-out;
     text-decoration: underline;
 }
 /*end header */
+
+
+/*section1*/
+.section1{
+    font-family:"Plus Jakarta Sans" ;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 96px 0;
+    
+}
+.text-s1 span{
+  color: #845326;
+  background-color: #F6ECE2;
+  border: 10px 10px 10px   ;
+  border-radius: 12px;
+ border: 1px solid #D3C3C099;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.text-s1 img{
+    padding-right: 6px;
+    background-color: #F6ECE2;
+}
+.section1 h1{
+    padding:24px 46px 0 0  ;
+    font-family: "Playfair Display";
+    font-size: 64px;
+    font-weight: 600;
+}
+.h1-s1{
+    font-weight: 400;
+    font-size: 18px;
+    color: #4F4442;
+    padding: 24px 5.5px 0 0;
+}
+
+.button-s1 button{
+    color: #2B1B17;
+    border: 1px solid #2B1B17;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 14px 28px;
+    margin-top: 33px ;
+  
+}
+.button-s1 :first-child{
+    color: #FFF8F3;
+    background-color: #2B1B17;
+   
+} 
+
 @media screen  and (max-width:700px) {
 .container{
     width: calc( 100% - 32px );
