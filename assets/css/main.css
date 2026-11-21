@@ -2,8 +2,13 @@
 
 .header{
     font-family:"Plus Jakarta Sans" ;
-box-shadow: 0px 1px 4px 1px #D3C3C04D;
+    box-shadow: 0px 1px 4px 1px #D3C3C04D;
+   position: fixed;
+   z-index: 9;
+   width: 100%;
+
 }
+
 .header .row{
     justify-content: space-between;
     padding: 16px 0;
@@ -103,6 +108,9 @@ transition: .1s ease-in-out;
     padding: 24px 5.5px 0 0;
 }
 
+.text-s1{
+   animation: s1-up 1s;
+}
 .button-s1 button{
     color: #2B1B17;
     border: 1px solid #2B1B17;
@@ -110,14 +118,127 @@ transition: .1s ease-in-out;
     border-radius: 4px;
     padding: 14px 28px;
     margin-top: 33px ;
+        transition: .1s ease-in-out;
+
   
 }
 .button-s1 :first-child{
     color: #FFF8F3;
     background-color: #2B1B17;
-   
-} 
 
+   
+}
+.button-s1 :hover{
+     background-color:#845326  ;
+    transform: scale(1.02);
+} 
+.stats{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-top:24px ;
+    border-top: 1px solid #D3C3C066 ;
+
+}
+.stat{
+     font-weight: 500;
+     margin-top: 32px ;
+     padding:  0px 0px 4.5px  16px;
+     width: 176px;
+     font-family:"Playfair Display" ;
+     border-left: 1px solid #D3C3C066 ;
+}
+.stat strong{
+    font-size: 28px;
+    color: #0E0402;
+}
+.stat p{
+    font-size: 12px;
+    color: #4F4442;
+}
+.stat img{
+    background-color: #FFF8F3E5;
+}
+.stats :first-child{
+    padding-left: 0px;
+     border-left: none ;
+}
+/* section1 -image */
+.image-s1{
+    position: relative;
+    padding: 16px;
+    animation: s1-up 1s;
+}
+.pg{
+    background-color: #F0E7DD;
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    transform: rotate(-2deg);
+
+}
+.image-badeg{
+    background-color: #FFFFFF;
+    padding: 12px;
+    border: 1px solid #D3C3C066;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0px  8px  6px  1px #D3C3C04D;
+}
+.point-text{
+    display: none;
+}
+.image{
+    background-color: #FFFFFF;
+}
+.image img{
+   
+    border-radius: 8px;
+    
+}
+.badeg{
+    
+    background-color: #FFF8F3;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid  #D3C3C080 ;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 2;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+       
+}
+.badeg p{
+    font-weight: 600;
+    color: #0E0402;
+}
+.badeg span{
+    font-weight: 400;
+    color: #4F4442;
+}
+
+
+/*animation  */
+@keyframes s1-up{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+
+
+/*header responsive */
 @media screen  and (max-width:700px) {
 .container{
     width: calc( 100% - 32px );
@@ -138,5 +259,126 @@ transition: .1s ease-in-out;
     border-radius: 6px;  
 
 }
+}
+/*section1  responsive*/
+@media screen  and (max-width:700px) {
+.section1{
+    flex-direction: column; 
+}
+.text-s1 span{
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.section1 h1{
+    padding: 14px  0px 0px ;
+    font-size: 40px;
+   
+}
+.h1-s1{
+    font-size: 14px;
+    padding :0px 0px 20px 0px ;
+}
+
+.button-s1 button{
+
+ margin-bottom: 10px;
+    padding: 10px 0 ;
+    margin-top: 0px ;
+    width:100% ;
+
+}
+ 
+.stats{
+    display: flex;
+    margin-top:0px ;
+    border: 1px solid #D3C3C066 ;
+    background-color:#FCF2E8;
+     padding:  12px 20px;
+     justify-content: space-between;
     
+}
+.stat{
+   width: fit-content;
+     margin-top: 10px ;
+     margin-bottom: 10px;
+     padding:  0px 30px;
+     gap: 0px;
+     
+    background-color:#FCF2E8;
+     border-left: 1px solid #D3C3C066 ;
+}
+     
+.stat strong{
+
+    background-color:#FCF2E8;
+    font-size: 20px;
+}
+.stat p{
+    align-items: center;
+    background-color:#FCF2E8;
+    font-size: 11px;
+}
+.stat img{
+    background-color:#FCF2E8;
+}
+.stats :first-child{
+    
+    padding-left:20px;
+     border-left: none ;
+}
+
+.image-s1{
+    padding: 0px; 
+}
+.pg{
+    background-color:#FCF2E8;
+    transform: rotate(0deg);
+
+  
+}
+.image-badeg{
+    padding: 0px;
+    border: 1px solid #D3C3C066;
+}
+.image{
+  background-color:#FCF2E8;
+}
+
+.badeg{
+    gap: 4px;
+    padding: 4px;
+    font-size: 12px;
+    bottom: 25px;      
+}
+.point-text  {
+
+display: block;
+}
+.dadeg-text{
+    display: none;
+}
+.dadeg-icon img{
+    display: none;
+}
+.point{
+background-color: #FEBC85;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+   
+}
+.dadeg-icon{
+align-items: center;
+justify-content: center;
+    display: flex;
+    gap: 4px;
+}
+
+    .image img {
+        
+       
+        max-width: 100%;
+        
+    }
 }
