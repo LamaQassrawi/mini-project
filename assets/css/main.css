@@ -708,7 +708,7 @@ margin-top: 20px;
 
 }
 
-.text-s3 button:hover {
+.text-s3 button :hover {
      background-color:#845326  ;
     transform: scale(1.02);
     img{
@@ -800,15 +800,12 @@ margin-top: 20px;
     padding: 0px 4px;
 }
 
-.offer{
+.offer {
     display: flex;
 align-items: center;
 gap:16px ;
 justify-content: center;
 margin-top: 24px;
-background-color: #2B1B17;
-
-
 
 }
 
@@ -825,16 +822,16 @@ border-radius: 4px;
 font-size: 14px;
 font-weight: 600;
 border: 1px solid #845326 ;
-
 }
-button:first-child{
+
+.offer :first-child{
     color: #FFDCC2;
    border: 1px  dashed #845326 ;
   background-color: rgba(58, 41, 35, 0.75);
 
 
 }
-.offer button img{
+.offer  img{
       background-color: rgba(58, 41, 35, 0.75);
     width: fit-content;
     margin-right:4px ;
@@ -866,11 +863,24 @@ button:first-child{
 
 }
 /*comunication section */
-.respsec{
+.respsec ,.respsec p , .respsec h2 , .comun , .comuns{ 
   opacity: 0;
-
   height: 0px;
 }
+
+/*footer*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1242,11 +1252,6 @@ margin-top: 10px;
 /*sec4 responsive */
 @media screen  and (max-width:700px){
 
-
-
-
-
-
 .sec-4{
     padding: 20px 0px;
     margin: 24px 0px;
@@ -1286,7 +1291,7 @@ button:first-child{
 }
 
 
-button:nth-child(2){
+.offer :nth-child(2){
     width: 100%;
     font-size: 14px;
     font-weight: 200;
@@ -1311,9 +1316,12 @@ button:nth-child(2){
 /**comunication section */
 
 @media screen  and (max-width:700px){
+    .respsec ,.respsec p , .respsec h2 , .comun , .comuns{ 
+  opacity: 1;
+  height: unset;
+}
    .respsec{
-    opacity: 1;
-    height: unset;
+  
     padding: 24px 16px  ;
     background-color: #FCF2E8;
   
