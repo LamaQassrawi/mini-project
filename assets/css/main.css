@@ -750,34 +750,129 @@ margin-top: 20px;
     border: 1px solid#84532633 ;
     border-radius: 16px;
     font-family: "Plus Jakarta Sans";
+    position: relative;
 }
 .s4-cl{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-      background-color:#2B1B17 ;
-    align-items: center;
+    padding: 0px 96px;
+    display: flex;
+    justify-content: center;
+      align-items: center;
+    flex-direction: column;
+    background-color:#2B1B17 ;
     
 }
 .s4-cl span{
-    background-color: #2B1B17;
+     background-color: rgba(58, 41, 35, 0.75);
    border: 1px solid #8453264D;
     color: #FFDCC2;
     font-size: 12px;
     font-weight: 600;
     border-radius: 12px;
-    padding: 6px 16px;
+    padding: 0px 16px 12px ;
+}
+.s4-cl span img{
+    background-color: rgba(58, 41, 35, 0.75);
+    margin: 8px 4px 0px;
+    align-items: center;
 }
 .s4-cl h2{
-        background-color: #2B1B17;
-  
-    color: #FFF8F3;
+   
+    background-color: #2B1B17;
+     color: #FFF8F3;
     font-size: 64px;
     font-weight: 600;
-font-family: "Playfair Display";
+    font-family: "Playfair Display";
     padding: 25px 118px;
-align-items: center;
+    align-items: center;
+    text-align: center;
 }
+.s4-cl p{
+    
+    background-color: #2B1B17;
+     color: #D3C3C0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Plus Jakarta Sans";
+    align-items: center;
+    text-align: center;
+    padding: 0px 4px;
+}
+
+.offer{
+    display: flex;
+align-items: center;
+gap:16px ;
+justify-content: center;
+margin-top: 24px;
+background-color: #2B1B17;
+
+
+
+}
+
+.offer button {
+
+    margin-top: 17px ;
+    padding: 12px 24px;
+    
+    align-items: center;
+    transition: .1s ease-in-out;
+color: #FFF8F3;
+background-color:#845326 ;
+border-radius: 4px;
+font-size: 14px;
+font-weight: 600;
+border: 1px solid #845326 ;
+
+}
+button:first-child{
+    color: #FFDCC2;
+   border: 1px  dashed #845326 ;
+  background-color: rgba(58, 41, 35, 0.75);
+
+
+}
+.offer button img{
+      background-color: rgba(58, 41, 35, 0.75);
+    width: fit-content;
+    margin-right:4px ;
+      transition: .1s ease-in-out;
+}
+
+
+
+
+@keyframes s4-up{
+    0%{
+      opacity: 0;
+        transform: translateY(0px);
+    }
+  
+    100%{
+       opacity: 1;
+        transform: translateY(10px);
+    }  
+
+}
+.offer :hover{
+    background-color: #2B1B17;
+    transform: scale(1.02);
+  
+}
+.sec-4:hover{
+      animation: s4-up 1.2s  forwards;
+
+}
+/*comunication section */
+.respsec{
+  opacity: 0;
+
+  height: 0px;
+}
+
+
 
 
 /*header responsive */
@@ -1143,4 +1238,117 @@ margin-top: 10px;
     opacity: 1;
    height: unset;
 }
+}
+/*sec4 responsive */
+@media screen  and (max-width:700px){
+
+
+
+
+
+
+.sec-4{
+    padding: 20px 0px;
+    margin: 24px 0px;
+    border-radius: 16px;
+}
+.s4-cl{
+    padding: 0px 20px;    
+}
+.s4-cl span{
+    padding: 4px 12px  ;
+}
+.s4-cl span img{
+display: none;
+}
+.s4-cl h2{
+    font-size: 28px;
+    padding: 0px 38.3px;
+}
+.s4-cl p{
+    font-size: 14px;
+    padding: 2px 3.2px;
+}
+
+.offer{
+flex-direction: column;
+margin-top: 16px;
+width: 100%;
+}
+
+.offer button {
+
+    margin-top: 0px ;
+    padding: 12px 0px;
+}
+button:first-child{
+      padding: 8px 14px;
+}
+
+
+button:nth-child(2){
+    width: 100%;
+    font-size: 14px;
+    font-weight: 200;
+    color: #FFFFFF;
+
+}
+.offer button img{
+    opacity: 0;
+    width: 0px;
+
+}
+
+
+
+
+
+ 
+    
+
+
+}
+/**comunication section */
+
+@media screen  and (max-width:700px){
+   .respsec{
+    opacity: 1;
+    height: unset;
+    padding: 24px 16px  ;
+    background-color: #FCF2E8;
+  
+} 
+.respsec h2{
+     background-color: #FCF2E8;
+    color: #0E0402;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Playfair Display";
+    padding-bottom: 12px;
+}
+.comuns{
+     background-color: #FCF2E8;
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+}
+.comun{
+    background-color: #FCF2E8;
+    display: flex;
+    gap: 6px;
+    color:#4F4442 ;
+      font-size: 14px;
+    font-weight: 400;
+     font-family: "Plus Jakarta Sans";
+     
+}
+.comun p{
+   background-color: #FCF2E8; 
+}
+.comun img{
+background-color: #FCF2E8;
+padding: 4px 0px;
+
+}
+
 }
