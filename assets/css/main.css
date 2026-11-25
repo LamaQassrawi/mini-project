@@ -686,20 +686,15 @@ align-items: center;
 border: 0;
 margin-top: 15px;
  transition: .1s ease-in-out;
-
+ 
 }
 .text-s3 button img{
      width: fit-content;
     background-color: #2B1B17;
 
      transition: .1s ease-in-out;
+
 }
-
-
-
-
-
-
 
 
 
@@ -719,13 +714,13 @@ margin-top: 15px;
 
 }
 
-.sec-3 button:hover {
+.text-s3 button:hover {
      background-color:#845326  ;
     transform: scale(1.02);
+    
     img{
         background-color: #845326;  
     }
-
 }
 @keyframes s3-up{
     0%{
@@ -1124,11 +1119,10 @@ display: flex;
     transform: scale(1.02);
 }
 
-.fotter-resp , .fotter-resp p , .fotter-resp h2 , .fotter-resp span ,.fotter-resp img ,.fotter-resp div{
+.fotter-resp {
   display: none;
 
 }
-
 
 
 /*header responsive */
@@ -1471,9 +1465,6 @@ justify-content:left;
 
 
 
-
-
-
 .text-s3 button{
 width: 100% ;
 padding: 12px  ;
@@ -1608,7 +1599,7 @@ padding: 4px 0px;
 }
 @media screen  and (max-width:700px){
 
-  .fotter-resp , .fotter-resp p , .fotter-resp h2 , .fotter-resp span ,.fotter-resp img ,.fotter-resp div{
+  .fotter-resp {
   display:block;
 
 }  
@@ -1618,7 +1609,9 @@ padding: 4px 0px;
 .footer{
     padding: 32px 20px;
 }
-
+.logo-f img{
+  display: none;
+}
 .f-sec1{
     padding-bottom:24px;
 grid-template-columns: 1fr ;
@@ -1630,11 +1623,10 @@ gap: 24px;
     justify-content: space-between;
     align-items: center;
 }
-.fimages{
+.simges{
     display:flex;
-    justify-content: space-between;
     align-items: center;
-    background-color:#2B1B17;
+     background-color:#2B1B17;
     gap: 12px;
 
 }
@@ -1644,8 +1636,7 @@ gap: 24px;
    font-weight: 400;
    color: #D3C3C0;
 }
-.fimages img{
-    
+.simges img{
     padding: 8.5px;
     background-color:#FFF8F31A ;
     border-radius: 12px;
@@ -1653,16 +1644,12 @@ gap: 24px;
 .f-2{
       border-top:1px solid #81747133 ;
     border-bottom: 1px solid #81747133;
-    padding: 0px 0px 16px;
+    padding: 2px 0px 18px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 0px;
 }
-.logo-f img{
-opacity: 0;
-width: 0;
-height: 0;
-}
+
 .logo-sec{
     padding: 0px;
     margin: 0px;
@@ -1677,7 +1664,7 @@ height: 0;
 }
 
 .f-sec2{
-  
+
     padding-top:7px ;
     justify-content: center;
 }
@@ -1688,3 +1675,11 @@ height: 0;
 
 
 }
+
+
+
+
+
+
+
+
