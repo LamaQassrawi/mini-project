@@ -721,7 +721,10 @@ margin-top: 15px;
     img{
         background-color: #845326;  
     }
+
 }
+
+
 @keyframes s3-up{
     0%{
         opacity: .5;
