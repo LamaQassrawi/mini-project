@@ -1279,6 +1279,7 @@ justify-content: center;
 }
 .cf{
     align-items: flex-start;
+    padding:0px 16px ;
 }
 .cf :first-child{
     opacity: 1;
